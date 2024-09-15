@@ -1,0 +1,26 @@
+header {
+    text-align: center;
+    color:antiquewhite;
+    font-size: 20px;
+    background-color: salmon;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;  
+    
+  
+}
+body{
+    background-color: antiquewhite;
+}
+.container{
+    background-color: salmon;
+}
+.container a:hover{
+color: black;
+}
+.container a{
+    font-size: 20px;
+    text-decoration: underline;
+}
