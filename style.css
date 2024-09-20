@@ -1,26 +1,60 @@
 header {
     text-align: center;
     color:antiquewhite;
-    font-size: 20px;
     background-color: salmon;
+    padding: 1em;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
 }
-.container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;  
-    
+header h1{
+    font-size: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    font-family: 'Courier New', Courier, monospace
+}
   
-}
 body{
     background-color: antiquewhite;
 }
+nav ul{
+list-style-type: none;
+padding:0;
+}
+.nav1{
+    display: inline-block;
+    margin: 0 15px;
+    border: 1px solid black;
+    background-color: antiquewhite;
+    margin:10px;
+    padding: 7px;
+    border-radius: 100px;
+    font-family: arial;
+
+    text-decoration: none;
+    color: black; /* Valfri färg på länkarna */
+    transition: transform 0.3s ease;
+}
+
+.nav1:hover {
+    transform: scale(1.21); /* Skala upp vid hover */
+    color: red; /* Ändra färg vid hover så att det blir tydligt */
+}
+main, aside{
+box-sizing: border-box;
+background-color:salmon;
+color:black;
+display:flex;
+justify-content: center;
+align-items: center;
+}
 .container{
-    background-color: salmon;
+    max-width: 1600px; /* orginal 1000px jag ändrade tillfälligt till 1600px*/
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-auto-rows: 120px;
+    gap: 1rem;
 }
-.container a:hover{
-color: black;
+.container main{
+    grid-column: 1/5;
 }
-.container a{
-    font-size: 20px;
-    text-decoration: underline;
+.container aside{
+   grid-column: 5/7;
 }
